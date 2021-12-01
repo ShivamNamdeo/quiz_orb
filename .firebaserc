@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "news-app-580c9",
+    "news_app": "news-app-580c9"
+  },
+  "targets": {}
+}

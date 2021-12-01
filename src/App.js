@@ -7,6 +7,8 @@ import NewsComp from "./NewsComp";
 
 function App() {
 
+
+
     const [search, set_search] = useState("");
     const [news_list, set_news_list] = useState([]);
     const [loading, set_loading] = useState(true);
@@ -18,6 +20,9 @@ function App() {
     fetch(`https://content.guardianapis.com/search?page=2&q=${search}&api-key=87b8fb1f-9979-4199-90a9-41e161b1c0b8`)
     .then(data=>data.json())
     .then(doc=>{
+
+
+
       console.log(doc.response.results);
       set_news_list(doc.response.results);
       set_loading(false);
@@ -25,6 +30,16 @@ function App() {
 
 
   }, [search]);
+
+
+
+
+
+
+
+
+
+
 
 
 if(loading){
@@ -38,6 +53,16 @@ if(loading){
       <div className="head">
 
         <h1>News App</h1>
+
+      
+
+        
+
+
+
+
+
+
       </div>
 
 
